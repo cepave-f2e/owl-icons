@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/cepave-f2e/owl-icons.git"
   },
-  "keywords": [],
+  "keywords": [
+    "icons",
+    "svg",
+    "owl"
+  ],
   "author": "Rocky Wu <rwu@cepave.com>",
   "license": "MIT",
   "bugs": {
