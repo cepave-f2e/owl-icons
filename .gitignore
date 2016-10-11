@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+npm-debug.log
+
+node_modules
+/coverage
+/static
+/gh-pages
+/dist
+/npm
