@@ -1,11 +1,11 @@
 {
   "name": "owl-icons",
-  "version": "1.0.0",
+  "version": "1.0.0-1476221676729",
   "description": "OWL UI Icons",
   "main": "./dist/owl-icons.js",
   "scripts": {
     "build.svg": "babel-node ./scripts/build.svg",
-    "build": "npm run build.svg && NODE_ENV=build webpack --progress"
+    "build": "npm run build.svg && NODE_ENV=build babel-node ./scripts/build"
   },
   "repository": {
     "type": "git",
