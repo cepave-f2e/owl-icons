@@ -25,11 +25,12 @@ gu.src('icons/*.svg')
 
       if (/^icon-/.test(id)) {
         id = id.replace(/^icon-/, '')
-        $el.attr('id', id)
         $el.find('[fill]').removeAttr('fill')
       }
 
-      $el.find('title').remove()
+      $el
+        .attr('id', `owl-icons-${id}`)
+        .find('title').remove()
     })
   }))
   .pipe(rename('owl-ui.svg'))
