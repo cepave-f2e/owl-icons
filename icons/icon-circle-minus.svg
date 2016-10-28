@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/20/circle-minus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Output-temp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="_archive" transform="translate(-1770.000000, -212.000000)" fill="#B8BDBF">
+            <path d="M1779.7796,214 C1775.48315,214 1772,217.483774 1772,221.78 C1772,226.077028 1775.48315,229.56 1779.7796,229.56 C1784.07685,229.56 1787.56,226.077028 1787.56,221.78 C1787.56,217.483774 1784.07685,214 1779.7796,214 Z M1782.70039,220.8075 C1783.23589,220.8075 1783.67,221.239159 1783.67,221.78 C1783.67,222.317097 1783.22942,222.7525 1782.70039,222.7525 L1776.85961,222.7525 C1776.32411,222.7525 1775.89,222.320842 1775.89,221.78 C1775.89,221.242903 1776.33058,220.8075 1776.85961,220.8075 L1782.70039,220.8075 Z" id="icom/circle-minus"></path>
+        </g>
+    </g>
+</svg>
