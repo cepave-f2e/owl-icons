@@ -2,11 +2,11 @@ const isNode = !(typeof window !== 'undefined' && window.document && document.cr
 const svgSource = require('raw!../dist/owl-ui.svg')
 
 if (!isNode) {
-  const div = document.createElement('svg')
-  div.id = 'owl-icons'
-  div.innerHTML = svgSource
+  const svg = document.createElement('svg')
+  svg.id = 'owl-icons'
+  svg.innerHTML = svgSource
 
-  document.body.appendChild(div)
+  document.body.appendChild(svg)
 }
 
 module.exports = svgSource
