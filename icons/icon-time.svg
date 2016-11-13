@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/18/time</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Output-temp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="temp" transform="translate(-856.000000, -94.000000)" fill="#B8BDBF">
+            <path d="M864.9925,95.5 C860.8525,95.5 857.5,98.86 857.5,103 C857.5,107.14 860.8525,110.5 864.9925,110.5 C869.14,110.5 872.5,107.14 872.5,103 C872.5,98.86 869.14,95.5 864.9925,95.5 L864.9925,95.5 Z M865,109 C861.685,109 859,106.315 859,103 C859,99.685 861.685,97 865,97 C868.315,97 871,99.685 871,103 C871,106.315 868.315,109 865,109 Z M865.375,99.25 L864.25,99.25 L864.25,103.75 L868.1875,106.1125 L868.75,105.19 L865.375,103.1875 L865.375,99.25 Z" id="icon/18/time"></path>
+        </g>
+    </g>
+</svg>

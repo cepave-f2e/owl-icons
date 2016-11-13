@@ -1,6 +1,6 @@
 {
   "name": "owl-icons",
-  "version": "1.0.0-1477646927973",
+  "version": "1.0.0-1479027843246",
   "description": "OWL UI Icons",
   "main": "./dist/owl-icons.js",
   "scripts": {
