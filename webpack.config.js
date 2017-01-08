@@ -10,14 +10,13 @@ module.exports = {
   watch: isDev,
 
   entry: {
-    [pkg.name]: [
-      './src'
-    ]
+    'owl-icons': ['./src']
   },
   output: {
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/deploy/dist`,
     filename: '[name].js',
-    libraryTarget: isBuild ? 'commonjs2' : 'var',
+    library: 'OwlIcons',
+    libraryTarget: isBuild ? 'umd' : 'var',
   },
 
   plugins: [
@@ -33,7 +32,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        loader: 'babel-loader'
       },
 
     ]

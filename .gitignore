@@ -7,3 +7,5 @@ node_modules
 /static
 /gh-pages
 /npm
+/deploy
+/dist

@@ -1,15 +1,12 @@
 {
-  "name": "owl-icons",
-  "version": "1.0.0-1479027843246",
-  "description": "OWL UI Icons",
-  "main": "./dist/owl-icons.js",
+  "name": "@cepave/owl-icons",
+  "version": "1.0.0",
+  "description": "OWL UI Icons set",
+  "main": "dist/owl-icons.js",
   "scripts": {
-    "build.svg": "babel-node ./scripts/build.svg",
-    "build": "npm run build.svg && NODE_ENV=build babel-node ./scripts/build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cepave-f2e/owl-icons.git"
+    "build.svg": "babel-node scripts/build.svg",
+    "build": "npm run build.svg && NODE_ENV=build babel-node scripts/build",
+    "deploy": "npm publish ./deploy --access=public && babel-node scripts/gh-tags"
   },
   "keywords": [
     "icons",
@@ -24,7 +21,7 @@
   "homepage": "https://github.com/cepave-f2e/owl-icons#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
-    "babel-loader": "^6.2.7",
+    "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.6",
     "babel-preset-stage-2": "^6.18.0",
     "chalk": "^1.1.3",
@@ -36,6 +33,8 @@
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
     "raw-loader": "^0.5.1",
-    "webpack": "^2.1.0-beta.25"
-  }
+    "shelljs": "^0.7.5",
+    "webpack": "2.2.0-rc.3"
+  },
+  "repository": "git@github.com:cepave-f2e/owl-icons.git"
 }

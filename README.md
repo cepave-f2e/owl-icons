@@ -1,17 +1,17 @@
-# owl-icons
-OWL Icons is the default icon set of [OWL UI](https://github.com/cepave-f2e/vue-owl-ui).
+# owl-icons [![Build Status](https://img.shields.io/circleci/project/github/cepave-f2e/owl-icons.svg)](https://circleci.com/gh/cepave-f2e/owl-icons)
 
+OWL Icons is the default icon set of [OWL UI](https://github.com/cepave-f2e/vue-owl-ui).
 
 ## Install
 
 ```sh
-$ npm install -S github:cepave-f2e/owl-icons
+$ yarn add @cepave/owl-icons
 ```
+
 ## Deploy
 
-- Add new icon svg in `/icons`
-- npm run build
-- git push to `master`
-
+- Add new icon svg in `/icons`.
+- Update new version in `package.json`.
+- git commit and push to `master`.
 
 That's all 
