@@ -1,6 +1,6 @@
 {
   "name": "@cepave/owl-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OWL UI Icons set",
   "main": "dist/owl-icons.js",
   "scripts": {
