@@ -36,5 +36,5 @@
     "shelljs": "^0.7.5",
     "webpack": "2.2.0-rc.3"
   },
-  "repository": "git@github.com:cepave-f2e/owl-icons.git"
+  "repository": "https://github.com/cepave-f2e/owl-icons.git"
 }
