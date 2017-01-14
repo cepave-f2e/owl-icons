@@ -1,4 +1,4 @@
-# owl-icons [![Build Status][![Build Status](https://img.shields.io/travis/cepave-f2e/owl-icons.svg)](https://travis-ci.org/cepave-f2e/owl-icons)
+# owl-icons [![Build Status](https://img.shields.io/travis/cepave-f2e/owl-icons.svg)](https://travis-ci.org/cepave-f2e/owl-icons)
 
 OWL Icons is the default icon set of [OWL UI](https://github.com/cepave-f2e/vue-owl-ui).
 
