@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - v7
+
+env:
+  global:
+  matrix:
+    - TRAVIS_MATRIX=build
+
+script:
+  - npm run $TRAVIS_MATRIX
+
+after_success:
+  - node scripts/deploy
+
+notifications:
+  slack: cepave:8qRjn2ioNTn30dvdZuJV5kXn

@@ -1,10 +1,29 @@
-import pkg, { repository, version } from '../package.json'
+const { version, repository } = require('../package.json')
+require('shelljs/global')
 
-const { GH_TOKEN } = process.env
+const { TRAVIS_BRANCH, TRAVIS_MATRIX, TRAVIS_PULL_REQUEST_BRANCH,
+  GH_TOKEN, NPM_PASSWD } = process.env
+
 const tokenRepo = repository.replace(/(github.com)/, `${GH_TOKEN}@$1`)
+const tag = `v${version}`
 
-module.exports = {
-  ver: version,
-  tag: `v${version}`,
-  repo: tokenRepo,
+console.log({ TRAVIS_BRANCH, TRAVIS_MATRIX, TRAVIS_PULL_REQUEST_BRANCH })
+
+if (TRAVIS_MATRIX === 'test') {
+  exec('curl -s https://codecov.io/bash | bash')
+}
+
+if (TRAVIS_BRANCH === 'master' && TRAVIS_MATRIX === 'build') {
+  exec(`git config --global user.email "auto_deploy@circleci.com"`)
+  exec(`git config --global user.name "CircleCI"`)
+
+  // Add GH Tag
+  exec(`git tag ${tag}`)
+  exec(`git push ${tokenRepo} ${tag}`, {
+    silent: true,
+  })
+
+  // Publish to NPM
+  exec(`echo -e "cepave\n${NPM_PASSWD}\nrwu@cepave.com" | npm login`)
+  exec(`npm publish ./deploy --access=public`)
 }
