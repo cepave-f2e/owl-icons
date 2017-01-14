@@ -5,8 +5,7 @@
   "main": "dist/owl-icons.js",
   "scripts": {
     "build.svg": "babel-node scripts/build.svg",
-    "build": "npm run build.svg && NODE_ENV=build babel-node scripts/build",
-    "deploy": "npm publish ./deploy --access=public && babel-node scripts/gh-tags"
+    "build": "npm run build.svg && NODE_ENV=build babel-node scripts/build"
   },
   "keywords": [
     "icons",
