@@ -2,7 +2,7 @@
   owl-icons
 </h1>
 <p align="center">
-  <a href="https://www.npmjs.com/package/owl-icons">
+  <a href="https://www.npmjs.com/@cepave/owl-icons">
     <img src="https://img.shields.io/npm/v/@cepave/owl-icons.svg" />
   </a>
   <a href="https://travis-ci.org/h/owl-icons" alt="Build Status">
