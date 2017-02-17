@@ -2,7 +2,7 @@ const { version, repository } = require('../package.json')
 require('shelljs/global')
 
 const { TRAVIS_BRANCH, TRAVIS_MATRIX, TRAVIS_PULL_REQUEST_BRANCH,
-  GH_TOKEN, NPM_PASSWD } = process.env
+  GH_TOKEN, NPM_TOKEN } = process.env
 
 const tokenRepo = repository.replace(/(github.com)/, `${GH_TOKEN}@$1`)
 const tag = `v${version}`
@@ -24,6 +24,6 @@ if (TRAVIS_BRANCH === 'master' && TRAVIS_MATRIX === 'build') {
   })
 
   // Publish to NPM
-  exec(`echo -e "cepave\n${NPM_PASSWD}\nrwu@cepave.com" | npm login`)
-  exec(`npm publish ./deploy --access=public`)
+  exec(`echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > ~/.npmrc`)
+  exec(`npm publish ./deploy --access=public`).code && exit(1)
 }
