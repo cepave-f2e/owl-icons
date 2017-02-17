@@ -1,6 +1,16 @@
-# owl-icons [![Build Status](https://img.shields.io/travis/cepave-f2e/owl-icons.svg)](https://travis-ci.org/cepave-f2e/owl-icons)
+<h1 align="center">
+  owl-icons
+</h1>
+<p align="center">
+  <a href="https://www.npmjs.com/package/owl-icons">
+    <img src="https://img.shields.io/npm/v/@cepave/owl-icons.svg" />
+  </a>
+  <a href="https://travis-ci.org/h/owl-icons" alt="Build Status">
+    <img src="https://img.shields.io/travis/cepave-f2e/owl-icons.svg" />
+  </a>
+</p>
 
-OWL Icons is the default icon set of [OWL UI](https://github.com/cepave-f2e/vue-owl-ui).
+OWL Icons are the default icon set of [OWL UI](https://github.com/cepave-f2e/vue-owl-ui).
 
 ## Install
 
